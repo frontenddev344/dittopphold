@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+html{
+    font-size: 16px;
+}
+:root {
+    --primary: #133458;
+    --Secondary: #0aaba3;
+    --white: #fff;
+    --black: #000;
+    --bg: #C9F7FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif !important;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1300px;
+}
+
+.ptb-70 {
+    padding: 70px 0;
+}
+
+.ptb-50 {
+    padding: 50px 0;
+}
+.pb-50 {
+    padding-bottom: 50px;
+}
+.pt-50 {
+    padding-top: 50px;
+}
+
+.ptb-30 {
+    padding: 30px 0;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+h1 {
+    font-size: 3.4375rem;
+    line-height: 1.1;
+    color: var(--white);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    color: var(--white);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 2.1875rem;
+    color: var(--primary);
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.5625rem;
+    line-height: 1.1;
+    font-weight: 600;
+    color: var(--primary);
+
+}
+
+p {
+    font-size: 1rem;
+}
+
+.bg {
+    background-color: var(--bg);
+}
+
+/* global css end here */
+/* header css start here */
+.site-header {
+    padding: 15px 20px;
+    width: 100%;
+    z-index: 99;
+    background: var(--white);
+}
+
+.site-logo img {
+    max-width: 250px;
+}
+
+.toggle,
+.close {
+    display: none;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.site-header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links ul li a {
+    font-size: 1rem;
+    color: #000;
+    /* text-transform: uppercase; */
+    font-weight: 600;
+    letter-spacing: .075em;
+    transition: all 0.3s linear;
+
+}
+
+.nav-links ul li a:hover,
+.nav-links ul li a.active {
+    color: #0aaba3;
+}
+
+.site-header.fixed-header {
+    position: fixed;
+
+    background-color: #fff;
+    box-shadow: rgb(189 189 189 / 35%) 0px 5px 15px;
+}
+
+/* header css end here */
+
+
+
+
+
+/* banner css start here */
+.site-banner {
+    background-image: url(../images/hero-banner.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.4;
+}
+
+.banner-txt h1 {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-abt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.banner-txt {
+    position: relative;
+    z-index: 9;
+    width: 100%;
+}
+
+/* banner css end here */
+
+
+
+
+
+
+/* footer section css start here */
+footer {
+    background-color: #dfdfdf;
+    box-shadow: rgb(0 0 0 / 11%) 0px 5px 40px 10px;
+}
+
+.footer-logo img {
+    width: 300px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-info ul {
+    display: flex;
+    gap: 15px;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-info {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.footer-info ul li {
+    line-height: 1;
+}
+
+.footer-info ul li a {
+    
+    color: #000;
+    font-weight: 600;
+    letter-spacing: .075em;
+}
+
+
+.footer-info ul li a:hover {
+    color: var(--Secondary);
+    transition: all 0.3s linear;
+
+}
+
+.copy-right {
+    text-align: center;
+    border-top: 1px solid #cccccc;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+/* footer section css end here */
+
+/* top text section css start */
+.top-text {
+    text-align: center;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: #333;
+}
+
+
+/* top text section css end */
+
+/* link section css start */
+
+.link-wrap{
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+/* .link-wrap::before{
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.5;
+} */
+.link-img {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+.link-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+
+}
+.link-text {
+    position: absolute;
+    top: 50%;
+    left: auto;
+    right: auto;
+    transform: translate(0, -50%);
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.link-text h4{
+    color: #fff;
+}
+.link-wrap a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.link-wrap a::before{
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.4;
+}
+.img-2{
+    display: none;
+}
+.link-wrap a:hover .img-2{
+     display: block;
+}
+.link-wrap a:hover .img-1{
+    display: none;
+}
+
+/* link section css end */
+
+/* newsletter section css start */
+.newsletter-sec{
+    background-image: url(../images/newsletter-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.news-wrap {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 8px;
+}
+.news-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.newsgroup {
+    width: 80%;
+    margin: 0 auto;
+    background: #c9f7ff;
+    height: 45px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.newsgroup input {
+    width: 80%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 0 15px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.newsgroup button {
+    width: 20%;
+    border: none;
+    height: 100%;
+    background-color: #133458;
+    color: #fff;
+}
+.newsgroup button:hover{
+    background-color: #0aaba3;
+}
+/* newsletter section css end */
+
+/* featured hotel section css start */
+.featured-sec{
+    background-color: #c9f7ff;
+}
+.site-heading  h2 {
+    color: #133458;
+    text-align: center;
+}
+.featured-img {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+.featured-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.featured-text {
+    background: #133458;
+    padding: 10px;
+    text-align: center;
+}
+.featured-text h4 a{
+    text-decoration: underline;
+}
+.featured-text h4 a, .featured-text p{
+    color: #fff;
+}
+.featured-text h4, .featured-text p {
+    margin-bottom: 5px;
+}
+.featured-wrap {
+    box-shadow: rgb(19 52 88 / 50%) 0px 7px 29px 0px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.site-heading {
+    margin-bottom: 30px;
+}
+/* featured hotel section css end */
+
+/* faq section css start */
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+    transition: all 0.5s;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+  }
+  .accordion-button::after {
+    transition: all 0.5s;
+    filter: brightness(0) invert(1);
+  }
+  
+
+
+  button.accordion-button {
+    background-color: #133458;
+    color: #fff;
+    font-size: 18px;
+}
+.accordion-item {
+    margin: 10px 0;
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+.accordion-button:not(.collapsed) {
+    color: #ffffff;
+    background-color: #133458;
+    box-shadow: none;
+}
+.accordion-button:focus {
+    border-color: #133458;
+    box-shadow: none;
+}
+/* faq section css end */
+
+/* sub pages css start */
+.site-banner.sub-banner {
+    height: 600px;
+}
+.sub-banner .banner-txt h1 {
+    font-size: 2.8rem;
+}
+
+/* hotel main section css start */
+.hotel-img {
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+}
+.hotel-img a{
+    display: block;
+}
+.hotel-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.hotel-wrap {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.hotel-text {
+    padding: 20px;
+    position: relative;
+}
+.hotel-text h4 a {
+    color: #133458;
+}
+.hotel-text h4 {
+    margin-bottom: 5px;
+}
+.location p, .price p {
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.price p strong{
+color: #133458;
+}
+.hotel-text ul {
+    padding-left: 20px;
+    margin: 10px 0;
+    list-style: disc;
+}
+.hotel-text ul li{
+    font-size: 16px;
+    color: #000;
+    padding: 2px 0;
+}
+.moretext{
+    display: none;
+}
+/* hotel main section css end */
+
+
+/* sub pages css end */

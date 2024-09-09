@@ -1,0 +1,152 @@
+@media(max-width:1200px) {
+    html {
+        font-size: 15px;
+    }
+
+    .site-logo img {
+        max-width: 200px;
+    }
+
+    .footer-logo img {
+        width: 250px;
+    }
+
+    .site-banner {
+        height: 60vh;
+    }
+
+    .footer-info {
+        width: 70%;
+    }
+
+}
+
+@media(max-width:992px) {
+    .nav-links ul li a {
+        color: #fff;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .toggle i {
+        color: #000;
+        font-size: 25px;
+    }
+
+    .nav-links ul {
+        gap: 20px;
+        flex-direction: column;
+        align-items: self-start;
+        padding: 50px 30px;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
+        background-color: #000;
+        height: 100vh;
+        transform: translateX(-100%);
+        transition: all 0.3s linear;
+        z-index: 999;
+    }
+
+    .close {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    .close i {
+        color: #fff;
+        font-size: 25px;
+    }
+
+    .menuToggle .nav-links {
+        transform: translateX(0%);
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+
+    .footer-info {
+        width: 90%;
+    }
+
+
+
+}
+
+@media(max-width:767px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    html {
+        font-size: 14px;
+    }
+
+    .toggle i,
+    .close i {
+        font-size: 22px;
+    }
+
+    .footer-info {
+        width: 100%;
+    }
+
+    .site-banner {
+        height: 60vh;
+    }
+
+
+    .footer-logo {
+        margin-bottom: 10px;
+    }
+
+    @media(max-width:575px) {
+
+        .nav-links {
+            width: 100%;
+        }
+
+
+        .site-banner {
+            height: 50vh;
+        }
+
+        .footer-info ul {
+            gap: 15px;
+        }
+
+
+
+
+        .footer-logo {
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+        }
+
+
+    }
+
+    @media(max-width:375px) {
+        .footer-logo img {
+            width: 170px;
+        }
+
+        .site-header {
+            padding: 10px 0;
+        }
+
+
+    }
+}
