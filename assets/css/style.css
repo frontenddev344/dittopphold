@@ -498,6 +498,8 @@ footer {
 }
 .hotel-img a{
     display: block;
+    height: 100%;
+    width: 100%;
 }
 .hotel-img img{
     height: 100%;
@@ -508,9 +510,11 @@ footer {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
     overflow: hidden;
+    height: 100%;
+    position: relative;
 }
 .hotel-text {
-    padding: 20px;
+    padding: 20px 20px 70px 20px;
     position: relative;
 }
 .hotel-text h4 a {
@@ -539,6 +543,29 @@ color: #133458;
 }
 .moretext{
     display: none;
+}
+.contact-btns a {
+    font-size: 14px;
+    background-color: #133458;
+    color: #fff;
+    padding: 10px 25px;
+    display: inline-block;
+    border: 1px solid #133458;
+    border-radius: 5px;
+}
+.contact-btns a i{
+    padding-left: 5px;
+}
+.contact-btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.hotel-main .col-md-6 {
+    margin: 12px 0;
 }
 /* hotel main section css end */
 

@@ -22,7 +22,7 @@ $(window).scroll(function(){
 
 $('.moreless-button').click(function() {
   var $this = $(this);
-  var $moreText = $this.closest('.hotel-text').find('.moretext');
+  var $moreText = $this.closest('.hotel-wrap').find('.moretext');
 
   $moreText.slideToggle();
   if ($this.html() == 'Les Mindre <i class="fa-solid fa-angle-up"></i>') {
